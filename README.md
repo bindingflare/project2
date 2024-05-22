@@ -10,9 +10,10 @@ Webpage for sharing cat information.
   - others
  
 ## Progress Report
-- HTML + CSS: 90% done.
-- JS: TBD
-- Dynamic functions: TBD
+- Primary HTML + CSS: Complete.
+- JS: 0%
+- Dynamic page functions: TBD
+- Secondary pages: TBD
 - Links: TBD
 
 ## How to
