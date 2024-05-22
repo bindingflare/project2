@@ -7,19 +7,26 @@
 
 .img-main-bg {
     width: 300px;
+    position: absolute;
+    right: 0;
+    top: 20px;
 }
 
-.img_cat {
-    width: 400px;
-    height: 400px;
+.img-cat {
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50px;
+    object-fit: cover;
+    margin: 12px 0;
 }
 
 .menu-horz-flex {
     display: flex;
+    
     justify-content: center;
     list-style-type: none;
     overflow: hidden;
+    gap: 20px;
 }
 
 .menu-horz-flex li {
@@ -31,10 +38,6 @@
 .menu-horz-flex a {
     color: black;
     text-decoration: none;
-}
-
-div {
-    margin: 0 10px;
 }
 
 .div-horz-flex  {
@@ -49,6 +52,20 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    grid-column: span 3;
+}
+
+.grid-item {
+    column-span: 1;
+    row-span: 1;
+}
+
+.div-grid {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .btn-highlight {
@@ -74,9 +91,9 @@ div {
 }
 
 .div-framer {
-    max-width: 1250px;
+    max-width: 85%;
     margin: 20px 0;
-    flex: 1 1 1250px;
+    flex: 0 1 1000px;
 }
 
 .article-popout {
@@ -160,6 +177,8 @@ p {
 }
 
 table {
+    table-layout: fixed;
+    white-space: normal
 }
 
 tr, td {
