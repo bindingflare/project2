@@ -4,104 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to HODU</title>
-    <style>
-        h2 {
-            font: 32px Cattys, sans-serif;
-            font-weight: 500;
-        }
-        @media screen and (max-width: 420px)
-        {
-            .div-flex {
-                flex-direction: column;
-            }
-
-            .div-flex-nomin .yellow-btn {
-                width: 70%;
-            }
-
-            .div-flex .yellow-btn {
-                width: 70%;
-            }
-        }
-
-        @font-face {
-            font-family: "Cattys";
-            src: url('assets/fonts/Cattys-WyEnE.otf');
-            format('opentype');
-                font-weight: normal;
-                font-style: normal;
-        }
-    </style>
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body style="background: #F2E9D8; color: black;">
 <header>
     <h1>HODU Home Page</h1>
-    <div>
-        <ul>
-            <li><img src="assets/Logo-fin.svg" alt="HODU"></li>
-            <li>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Support</li>
-                        <li><button>Download</button></li>
-                    </ul>
-                </nav>
-            </li>
-        </ul>
+    <div class="div-framer">
+        <div class="div-horz-flex">
+            <img class="img_hodu" src="assets/Logo-fin.svg" alt="HODU" style="align-content: first">
+            <ul class="menu-horz-flex" style="align-self: flex-end">
+                <li style="float: left;"><a href="home.html>">Home</a></li>
+                <li style="float: left;"><a href="home.html">About</a></li>
+                <li style="float: left;"><a href="home.html">Support</a></li>
+                <li style="float: left;"><a href="home.html"><button class="btn-highlight">Download</button></a></li>
+            </ul>
+        </div>
     </div>
-
 </header>
 <section>
     <h1>Product Introduction</h1>
-    <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s, when an unknown</p>
-    <button>Download</button>
-</section>
-<section>
-    <h1>Product Description</h1>
-    <h2>Lorem Ipsum is simply
-        dummy text of the printing and dummy text</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    <h2>dummy text of the printing and dummy</h2>
-    <p>Lorem Ipsum is simply <em>dummy text</em> of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-    <div>
-        <img src="assets/images/img_3.png" alt="Cat image 3">
+    <div class="div-framer">
+        <div class="div-horz-flex">
+            <article>
+                <h2 class="h2-main">Lorem Ipsum is simply dummy text of the printing and</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown</p>
+                <button class="btn-highlight">Download</button>
+            </article>
+            <div>
+                <img class="img-main-bg" src="assets/images/cat_in_box.svg" alt="Cat in box">
+            </div>
+        </div>
     </div>
-    <h2>Continue exploring HODU</h2>
-    <button>Show more</button>
 </section>
-<section>
-    <h1>Interactive Map</h1>
-    <h2>Where you'll be</h2>
-    <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+<section style="background: white">
+    <h1>Product Description</h1>
+    <div class="div-framer">
+        <div class="div-horz-flex">
+            <img src="assets/images/cat-sub.png" alt="Cat looking to the left">
+            <article>
+                <div class="div-flex" style="height: 100%">
+                    <h2>Lorem Ipsum is simply
+                        dummy text of the printing and dummy text</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+            </article>
+        </div>
+    </div>
 </section>
-<section>
-    <h1>Subscribe to our newsletter!</h1>
-    <h2>Subscribe to our Blog post</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text </p>
-    <form action="javascript:void(0);">
-        <label for="subscribe"><img src="assets/mail.svg" alt="Email address:"></label>
-        <input id="subscribe" type="text" placeholder="Enter your e-mail address">
-        <button>Subscribe</button>
-    </form>
+<section style="background: white">
+    <h1>Product Brief</h1>
+    <div class="div-framer">
+        <h2 class="h2-sub">dummy text of the printing and dummy</h2>
+        <p>Lorem Ipsum is simply <em>dummy text</em> of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    </div>
 </section>
-<footer>
+<section style="background: white">
+    <div class="div-framer">
+        <div class="div-horz-flex">
+        <table>
+            <tr>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat1.jpg" alt="Cat image 1">
+                </td>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat2.jpg" alt="Cat image 2">
+                </td>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat3.jpg" alt="Cat image 3">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat4.jpg" alt="Cat image 4">
+                </td>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat5.jpg" alt="Cat image 5">
+                </td>
+                <td>
+                    <img class="img_cat" src="assets/images/cats/cat6.jpg" alt="Cat image 6">
+                </td>
+            </tr>
+        </table>
+        </div>
+        <h2>Continue exploring <em>HODU</em></h2>
+        <button class="btn-highlight">Show more</button>
+    </div>
+</section>
+<section style="background: white; padding-bottom: 100px;">
+    <div class=div-framer>
+        <h1>Interactive Map</h1>
+        <article>
+            <h2>Where you'll be</h2>
+            <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+            <div style="min-height: 500px; background: gray;">
+
+            </div>
+        </article>
+    </div>
+</section>
+<section style="background-image: url(assets/images/cat-background.jpg); background-position: 0 1000px;">
+    <h1>Newsletter</h1>
+    <div class="div-framer">
+        <article class="article-popout">
+            <div class="div-flex" style="justify-content: flex-start">
+                <h2 class="h2-subscribe">Subscribe to our Blog post</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text </p>
+            </div>
+            <form action="javascript:void(0);" class="form-subscribe">
+                <label for="subscribe"><img src="assets/mail.svg" alt="Email address:"></label>
+                <input id="subscribe" type="text" placeholder="Enter your e-mail address">
+                <button class="btn-highlight">Subscribe</button>
+            </form>
+        </article>
+    </div>
+</section>
+<footer style="background: white">
     <h1>Company Information</h1>
-    <img src="assets/Logo-fin.svg" alt="HODU COMPANY">
-    <div>
-        <ul>
-            <li><button><img src="assets/icon-blog.svg" alt="Blog"></button></li>
-            <li><button><img src="assets/instagram.svg" alt="Instagram"></button></li>
-            <li><button><img src="assets/facebook.svg" alt="Facebook"></button></li>
-            <li><button><img src="assets/youtube.svg" alt="Youtube"></button></li>
-        </ul>
+    <div class="div-framer">
+        <div class="div-horz-flex">
+            <img class="img_hodu" src="assets/Logo-fin.svg" alt="HODU COMPANY" style="height: 60px;">
+            <ul class="menu-horz-flex">
+                <li><button class="btn-social"><img src="assets/blog.svg" alt="Blog" ></button></li>
+                <li><button class="btn-social"><img src="assets/instagram.svg" alt="Instagram"></button></li>
+                <li><button class="btn-social"><img src="assets/facebook.svg" alt="Facebook"></button></li>
+                <li><button class="btn-social"><img src="assets/youtube.svg" alt="Youtube"></button></li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
