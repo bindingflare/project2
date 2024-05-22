@@ -8,6 +8,12 @@ Webpage for sharing cat information.
   - Subscribe form
   - Hover button
   - others
+ 
+## Progress Report
+- HTML + CSS: 90% done.
+- JS: TBD
+- Dynamic functions: TBD
+- Links: TBD
 
 ## How to
 1. Clone this repository.
