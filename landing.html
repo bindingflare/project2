@@ -125,15 +125,62 @@
                     Lorem Ipsum has been the industry's standard dummy text </p>
             </div>
             <div class="div-flex">
-                <form action="javascript:void(0);" class="form-subscribe">
+                <form action="javascript:void(0);" id="subscribe" class="form-subscribe">
                     <label for="subscribe"><img src="assets/mail.svg" alt="Email address:"></label>
-                    <input id="subscribe" type="text" placeholder="Enter your e-mail address">
-                    <button class="btn-highlight" style="margin: 0 0;">Subscribe</button>
+                    <input type="text" placeholder="Enter your e-mail address">
+                    <button class="btn-highlight" style="margin: 0 0;" type="submit">Subscribe</button>
                 </form>
             </div>
         </article>
     </div>
 </section>
+<div id="popup-cover" class="div-popup-bg">
+    <div id="popup-subscribed" class="div-popup" style="background-image: url('assets/popup/submit-msg-bg.png'); background-size: cover;">
+        <img src="assets/popup/cat-blush.png" alt="Blushing cat says hi!" style="width: 140px; align-self: center; padding: 32px 0;">
+        <article class="article-popup">
+            <h2>Thank you!</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing industry. </p>
+            <div>
+                <button id="close-popup" class="btn-highlight" onclick="closePopup()">OK! I Love HODU</button>
+            </div>
+        </article>
+    </div>
+</div>
+<script>
+    // Creates popup for form submit
+    function createSubmitPopout(event) {
+        console.log("creating popup!");
+
+        const cover = document.getElementById("popup-cover")
+        cover.style.display = "block";
+
+        const popup = document.getElementById("popup-subscribed");
+        window.setTimeout(function(){
+            popup.style.transform = 'scale(1)';
+        },0);
+
+        event.preventDefault();
+    }
+
+    // Add event listener to form submit
+    const form = document.getElementById("subscribe");
+    form.addEventListener("submit", createSubmitPopout);
+
+    // Hide popup when close is pressed
+    function closePopup(event) {
+        console.log("closing popup!");
+
+        const cover = document.getElementById("popup-cover")
+
+        const popup = document.getElementById("popup-subscribed");
+        popup.style.transform = 'scale(0)';
+        
+        window.setTimeout(function(){
+            cover.style.display = "none";
+            cover.style.display = 'none';
+        },700);
+    }
+</script>
 <footer style="background: white">
     <h1>Company Information</h1>
     <div class="div-framer">
