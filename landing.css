@@ -22,7 +22,8 @@
 
 .menu-horz-flex {
     display: flex;
-    
+    margin: 0;
+    padding: 0;
     justify-content: center;
     list-style-type: none;
     overflow: hidden;
@@ -91,6 +92,9 @@
 }
 
 .div-framer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 1300px;
     max-width: 70%;
     margin: auto;
@@ -169,7 +173,6 @@ em {
 h2 {
     font: 32px Cattys, sans-serif;
     font-weight: 500;
-    align-self: flex-start;
     margin: 16px 0;
 }
 
