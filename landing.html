@@ -96,9 +96,17 @@
         <article>
             <h2>Where you'll be</h2>
             <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-            <div style="min-height: 500px; background: gray;">
+            <div id="map" style="height: 500px; background: gray;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fad914fd99d367de8f69cd1fe547a203"></script>
+            <script>
+                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                var options = { //지도를 생성할 때 필요한 기본 옵션
+                    center: new kakao.maps.LatLng(33.44233882835437, 126.57143639486833), //지도의 중심좌표.
+                    level: 3 //지도의 레벨(확대, 축소 정도)
+                };
 
-            </div>
+                var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+            </script>
         </article>
     </div>
 </section>
