@@ -103,15 +103,7 @@
             <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
             <div id="map" style="height: 500px; background: gray;"></div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fad914fd99d367de8f69cd1fe547a203"></script>
-            <script>
-                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-                var options = { //지도를 생성할 때 필요한 기본 옵션
-                    center: new kakao.maps.LatLng(33.44233882835437, 126.57143639486833), //지도의 중심좌표.
-                    level: 3 //지도의 레벨(확대, 축소 정도)
-                };
-
-                var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-            </script>
+            <script src="mapapi.js" type="text/javascript"></script>
         </article>
     </div>
 </section>
@@ -146,41 +138,7 @@
         </article>
     </div>
 </div>
-<script>
-    // Creates popup for form submit
-    function createSubmitPopout(event) {
-        console.log("creating popup!");
-
-        const cover = document.getElementById("popup-cover")
-        cover.style.display = "block";
-
-        const popup = document.getElementById("popup-subscribed");
-        window.setTimeout(function(){
-            popup.style.transform = 'scale(1)';
-        },0);
-
-        event.preventDefault();
-    }
-
-    // Add event listener to form submit
-    const form = document.getElementById("subscribe");
-    form.addEventListener("submit", createSubmitPopout);
-
-    // Hide popup when close is pressed
-    function closePopup(event) {
-        console.log("closing popup!");
-
-        const cover = document.getElementById("popup-cover")
-
-        const popup = document.getElementById("popup-subscribed");
-        popup.style.transform = 'scale(0)';
-        
-        window.setTimeout(function(){
-            cover.style.display = "none";
-            cover.style.display = 'none';
-        },700);
-    }
-</script>
+<script src="newsletter.js"></script>
 <footer style="background: white">
     <h1>Company Information</h1>
     <div class="div-framer">
