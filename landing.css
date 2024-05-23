@@ -31,8 +31,6 @@
 }
 
 .menu-horz-flex li {
-    margin: 0 0;
-    padding: 0 12px;
     align-self: center;
 }
 
@@ -54,6 +52,7 @@
     flex-direction: column;
     justify-content: center;
     grid-column: span 3;
+    width: 100%;
 }
 
 .grid-item {
@@ -73,6 +72,7 @@
     background: #D97652;
     border-radius: 30px;
     border-width: 0;
+    margin: 16px 0;
     padding: 10px 24px;
     color: white;
     font-weight: 700;
@@ -84,11 +84,19 @@
 }
 
 .btn-social {
+    vertical-align: middle;
     background: #F29D52;
     border-radius: 1000px;
+    margin: 0 0;
     padding: 5px 5px;
-    margin: 0 5px;
+    width: 40px;
+    height: 40px;
     border-width: 0;
+}
+
+.btn-social:hover {
+    background: #D97652;
+    cursor: pointer;
 }
 
 .div-framer {
@@ -99,6 +107,7 @@
     max-width: 70%;
     margin: auto;
     padding: 20px 0;
+    gap: 16px;
 }
 
 .article-popout {
@@ -107,29 +116,26 @@
     background: #263140;
     color: white;
     border-radius: 32px;
-    padding: 12px 50px;
-    margin: 20px 0;
+    padding: 32px 50px;
+    margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .form-subscribe {
-    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: white;
     border-radius: 32px;
     padding: 5px 10px;
-    width: 50%;
-    min-width: 300px;
+    flex: 0 1 auto;
 }
 
 .form-subscribe > input {
     border-width: 0;
     flex: 1 1 auto;
-    min-width: 100px;
 }
 
 .form-subscribe > input:focus {
@@ -149,29 +155,34 @@ section, header, footer {
 }*/
 
 .h2-main {
-    font: 48px Arial, sans-serif;
-    font-weight: 700;
+    font: 48px Kanit, sans-serif;
+    font-weight: 500;
     margin-top: 100px;
 }
 
 .h2-sub {
-    font: 24px Arial, sans-serif;
-    font-weight: 700;
+    font: 32px Kanit, sans-serif;
+    font-weight: 400;
     color: #D97652;
 }
 
 .h2-subscribe {
-    font: 24px Arial, sans-serif;
-    font-weight: 700;
+    font: 36px Kanit, sans-serif;
+    font-weight: 500;
+}
+
+.p-small {
+    color: #F2E9D8;
+    font: 14px Kanit, sans-serif;
+    font-weight: 400;
 }
 
 em {
-    font: 24px Arial, sans-serif;
-    font-weight: 700;
+    color: #D97652;
 }
 
 h2 {
-    font: 32px Cattys, sans-serif;
+    font: 48px Cattys, sans-serif;
     font-weight: 500;
     margin: 16px 0;
 }
@@ -181,17 +192,14 @@ h1 {
 }
 
 p {
+    font: 18px Kanit, sans-serif;
     align-self: flex-start;
-    margin: 16px 0;
+    margin: 8px 0;
 }
 
 table {
     table-layout: fixed;
     white-space: normal
-}
-
-tr, td {
-    margin: 5px;
 }
 
 .article-flex-center {

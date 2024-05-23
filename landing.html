@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to HODU</title>
     <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body style="background: #F2E9D8; color: black;">
 <header>
@@ -87,7 +90,7 @@
             </div>
         </article>
         <div>
-            <h2>Continue exploring <em>HODU</em></h2>
+            <h2>Continue exploring <img src="assets/Logo-fin.svg" alt="HODU" style="height: 30px;"></h2>
             <button class="btn-highlight">Show more</button>
         </div>
     </div>
@@ -116,16 +119,18 @@
     <h1>Newsletter</h1>
     <div class="div-framer">
         <article class="article-popout">
-            <div class="div-flex" style="justify-content: flex-start">
+            <div class="div-flex" style="justify-content: flex-start; margin-right: 16px;">
                 <h2 class="h2-subscribe">Subscribe to our Blog post</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <p class="p-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text </p>
             </div>
-            <form action="javascript:void(0);" class="form-subscribe">
-                <label for="subscribe"><img src="assets/mail.svg" alt="Email address:"></label>
-                <input id="subscribe" type="text" placeholder="Enter your e-mail address">
-                <button class="btn-highlight">Subscribe</button>
-            </form>
+            <div class="div-flex">
+                <form action="javascript:void(0);" class="form-subscribe">
+                    <label for="subscribe"><img src="assets/mail.svg" alt="Email address:"></label>
+                    <input id="subscribe" type="text" placeholder="Enter your e-mail address">
+                    <button class="btn-highlight" style="margin: 0 0;">Subscribe</button>
+                </form>
+            </div>
         </article>
     </div>
 </section>
@@ -135,7 +140,7 @@
         <div class="div-horz-flex">
             <img class="img_hodu" src="assets/Logo-fin.svg" alt="HODU COMPANY" style="height: 60px;">
             <ul class="menu-horz-flex">
-                <li><button class="btn-social"><img src="assets/blog.svg" alt="Blog" ></button></li>
+                <li><button class="btn-social"><img src="assets/blog.svg" alt="Blog"></button></li>
                 <li><button class="btn-social"><img src="assets/instagram.svg" alt="Instagram"></button></li>
                 <li><button class="btn-social"><img src="assets/facebook.svg" alt="Facebook"></button></li>
                 <li><button class="btn-social"><img src="assets/youtube.svg" alt="Youtube"></button></li>
