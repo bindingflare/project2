@@ -19,9 +19,10 @@ Webpage for sharing cat information.
   - Map section: Done
   - Subscribe section: Done
   - Footer menu: 90%
-### JS: 66% ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png)
+### JS: 73% ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png)
   - Kakao map API : Done
   - Subscribe form: 80%
+  - Show more button: 99%
   - Hover button: TBD
   - Mobile menu button: TBD  
 ### Secondary pages: TBD ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
