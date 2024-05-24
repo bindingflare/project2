@@ -32,6 +32,11 @@ function addMoreCats(event) {
     }
 
     grid.style.maxHeight = new_height + height + "px";
+
+    window.setTimeout(function () {
+        grid.style.maxHeight = "";
+    }, 400);
+    
     event.preventDefault();
 }
 
