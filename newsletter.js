@@ -28,7 +28,6 @@ function closePopup(event) {
     popup.style.transform = 'scale(0)';
 
     window.setTimeout(function(){
-        cover.style.display = "none";
         cover.style.display = 'none';
     },700);
 }

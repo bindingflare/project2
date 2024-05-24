@@ -92,7 +92,7 @@
     flex-direction: column;
     align-content: center;
     transform: scale(0);
-    transition: .6s ease opacity,.6s ease transform;
+    transition: .6s opacity, .6s ease;
 }
 
 .article-popup {
@@ -263,4 +263,9 @@ article {
     format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+@keyframes change-height {
+    from {width: 50px;}
+    to {width: 100%;}
 }
