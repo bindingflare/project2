@@ -61,11 +61,13 @@
 }
 
 .div-grid {
+    height: auto;
     display: grid;
     flex-direction: column;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    transition: all .5s ease-in-out;
 }
 
 .div-popup-bg {
@@ -263,9 +265,4 @@ article {
     format('opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-@keyframes change-height {
-    from {width: 50px;}
-    to {width: 100%;}
 }
