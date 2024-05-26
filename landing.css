@@ -1,15 +1,31 @@
-.img_hodu {
-    height: 40px;
-    width: auto;
-    margin: 16px 0;
-    align-self: flex-start;
+#btn-scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 50;
+    border-width: 0;
+    padding: 10px 12px;
+    border-radius: 1000px;
 }
 
-.img-main-bg {
+#btn-scroll-top:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+#img-main-bg {
     width: 300px;
     position: absolute;
     right: 0;
     bottom: -20px;
+}
+
+.img-hodu {
+    height: 40px;
+    width: auto;
+    margin: 16px 0;
+    align-self: flex-start;
 }
 
 .img-cat {
