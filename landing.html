@@ -16,12 +16,15 @@
     <div class="div-framer">
         <div class="div-horz-flex">
             <img class="img-hodu" src="assets/Logo-fin.svg" alt="HODU">
-            <ul class="menu-horz-flex" style="align-self: flex-end">
-                <li style="float: left;"><a href="#">Home</a></li>
-                <li style="float: left;"><a href="#">About</a></li>
-                <li style="float: left;"><a href="#">Support</a></li>
-                <li style="float: left;"><a href="#"><button class="btn-highlight">Download</button></a></li>
-            </ul>
+            <div id="menu-framer">
+                <ul id="mainmenu" class="menu-horz-flex" style="align-self: flex-end">
+                    <li style="float: left;"><a href="#">Home</a></li>
+                    <li style="float: left;"><a href="#">About</a></li>
+                    <li style="float: left;"><a href="#">Support</a></li>
+                    <li style="float: left;"><a href="#"><button class="btn-highlight">Download</button></a></li>
+                </ul>
+                <script src="mainmenu.js"></script>
+            </div>
         </div>
     </div>
 </header>
@@ -29,7 +32,7 @@
     <h1>Product Introduction</h1>
     <div class="div-framer">
         <div class="div-horz-flex">
-            <article style="margin-bottom: 150px">
+            <article id="article-main">
                 <h2 class="h2-main">Lorem Ipsum is simply dummy text of the printing and</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -37,7 +40,7 @@
                     ever since the 1500s, when an unknown</p>
                 <button class="btn-highlight">Download</button>
             </article>
-            <div style="width: 100%; position: relative">
+            <div id="div-main-side">
                 <img id="img-main-bg" src="assets/images/cat_in_box.svg" alt="Cat in box">
             </div>
         </div>

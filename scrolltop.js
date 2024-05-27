@@ -12,7 +12,8 @@ function goToTop() {
 let btnScroll = document.getElementById("btn-scroll-top");
 
 function scrollFunc() {
-    const footer =    document.getElementsByTagName("footer")[0];
+    const footer =    document.querySelector("footer");
+    // querySelector returns first hit, can use instead of document.getElementsByTagName("footer")[0];
     let footerHeight = parseInt(window.getComputedStyle(footer).height, 10);
 
     let limit = document.documentElement.scrollHeight - document.documentElement.clientHeight - footerHeight;
