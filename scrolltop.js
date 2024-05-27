@@ -1,4 +1,6 @@
 function goToTop() {
+    console.log("scrolling to top!");
+
     setTimeout(function ()
     {
         window.scrollTo({
@@ -31,7 +33,7 @@ function scrollFunc() {
             "right": "50px"
         });
     } else {
-        btnScroll.style.display = "none";
+        btnScroll.css("display", "none");
     }
 }
 
