@@ -353,9 +353,15 @@ span {
     padding: 0 4px;
 }
 
+header {
+    background: #F2E9D8;
+}
+
 body {
     margin-top: 0;
     margin-bottom: 0;
+    background: #F2E9D8;
+    color: black;
 }
 
 @media screen and (max-width: 1200px) {
@@ -448,5 +454,10 @@ body {
 
     .div-horz-flex {
         flex-direction: column;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
     }
 }
