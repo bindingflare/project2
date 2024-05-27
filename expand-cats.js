@@ -41,7 +41,7 @@ function addMoreCats(event) {
         grid.style.maxHeight = "";
     }, 400);
 
-    if(extraImgCount >= 12) {
+    if(extraImgCount >= 9) {
         btnexpand.innerText = "Lets go HODU!";
         btnexpand.style.backgroundColor = "#263140";
         btnexpand.removeEventListener("click", addMoreCats); // TODO make another webpage for more HODU content
