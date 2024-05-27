@@ -161,11 +161,17 @@
     <button id="btn-scroll-top" onclick="goToTop()"><img src="assets/icon/keyboard_arrow_up.svg" alt="Go to top"></button>
 </div>
 <script src="scrolltop.js"></script>
-<footer style="background: white">
+<footer style="background: white;">
     <h1>Company Information</h1>
     <div class="div-framer">
-        <div class="div-horz-flex">
-            <img class="img-hodu" src="assets/Logo-fin.svg" alt="HODU COMPANY" style="height: 60px;">
+        <div class="div-horz-flex" style="position: relative;">
+            <img id="footerhodu" class="img-hodu" src="assets/Logo-fin.svg" alt="HODU COMPANY" style="height: 60px;">
+            <ul class="menu-nav-flex">
+                <li>About</li>
+                <li>Blog</li>
+                <li>Support</li>
+                <li>Terms of Use</li>
+            </ul>
             <ul class="menu-horz-flex">
                 <li><button class="btn-social"><img src="assets/icon/blog.svg" alt="Blog"></button></li>
                 <li><button class="btn-social"><img src="assets/icon/instagram.svg" alt="Instagram"></button></li>
