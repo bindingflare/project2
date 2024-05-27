@@ -9,7 +9,7 @@ function goToTop() {
     }, 100);
 }
 
-let btnScroll = document.getElementById("btn-scroll-top");
+let btnScroll = $("#btn-scroll-top");
 
 function scrollFunc() {
     const footer =    document.querySelector("footer");
@@ -19,11 +19,17 @@ function scrollFunc() {
     let limit = document.documentElement.scrollHeight - document.documentElement.clientHeight - footerHeight;
 
     if (document.documentElement.scrollTop > limit) {
-        btnScroll.style.display = "block";
-        btnScroll.style.position = "absolute"
+        btnScroll.css({
+            "display": "block",
+            "position": "absolute",
+            "right": "42px" // minus body margin of 8px
+        });
     } else if(document.documentElement.scrollTop > 20) {
-        btnScroll.style.display = "block";
-        btnScroll.style.position = "fixed";
+        btnScroll.css({
+            "display": "block",
+            "position": "fixed",
+            "right": "50px"
+        });
     } else {
         btnScroll.style.display = "none";
     }
