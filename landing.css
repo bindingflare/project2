@@ -53,7 +53,7 @@
 
 #section-catbg {
     background-image: url(assets/images/cat-background.jpg);
-    background-size: cover;
+    background-size: 2000px auto;
     background-position: 30% 35%;
     background-color: white;
     width: 100%;
@@ -207,7 +207,7 @@
 
 .article-popout {
     position: relative;
-    bottom: 100px;
+    bottom: 170px;
     background: #263140;
     color: white;
     border-radius: 32px;
