@@ -14,9 +14,10 @@ function addMoreCats(event) {
 
         // create an image element of img-cat class
         const img = document.createElement('img');
+        let num = Math.floor(Math.random() * 100);
         img.setAttribute("class","img-cat"); // NOTE: in Jquery can use .attr()
-        img.setAttribute("src","assets/images/cats/cat1.jpg");
-        img.setAttribute("alt", "cat image " + i);
+        img.setAttribute("src","https://picsum.photos/id/" + num + "/300");
+        img.setAttribute("alt", "cat image " + num);
         img.style.transition = ".4s ease";
         img.style.opacity = "0";
         
