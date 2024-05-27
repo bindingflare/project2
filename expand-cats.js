@@ -14,7 +14,7 @@ function addMoreCats(event) {
 
         // create an image element of img-cat class
         const img = document.createElement('img');
-        img.setAttribute("class","img-cat");
+        img.setAttribute("class","img-cat"); // NOTE: in Jquery can use .attr()
         img.setAttribute("src","assets/images/cats/cat1.jpg");
         img.setAttribute("alt", "cat image " + i);
         img.style.transition = ".4s ease";
@@ -41,5 +41,5 @@ function addMoreCats(event) {
 }
 
 // Add event listener to show more button
-const expandbtn = document.getElementById("expand-cats");
-expandbtn.addEventListener("click", addMoreCats);
+const btnexpand = document.getElementById("expand-cats");
+btnexpand.addEventListener("click", addMoreCats);
