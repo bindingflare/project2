@@ -50,8 +50,7 @@
     <h1>Product Description</h1>
     <div class="div-framer">
         <div class="div-horz-flex">
-            <div class="div-flex">
-                <img src="assets/images/cat-sub.png" alt="Cat looking to the left" style="width: 100%;">
+            <div id="img-sub-bg">
             </div>
             <article class="article-flex-center">
                 <h2><span>Lorem Ipsum is simply </span>
@@ -122,16 +121,16 @@
     <h1>Newsletter</h1>
     <div class="div-framer">
         <article class="article-popout">
-            <div class="div-flex" style="justify-content: flex-start; margin-right: 16px;">
+            <div id="subscribeinfo" class="div-flex">
                 <h2 class="h2-subscribe">Subscribe to our Blog post</h2>
                 <p class="p-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text </p>
             </div>
             <div class="div-flex">
-                <form action="javascript:void(0);" id="subscribe" class="form-subscribe">
+                <form action="javascript:void(0);" id="subscribe" class="form-subscribe" style="position: relative">
                     <label for="email-id"><img src="assets/icon/mail.svg" alt="Email address:"></label>
                     <input id="email-id" type="text" placeholder="Enter your e-mail address">
-                    <button class="btn-highlight" style="margin: 0 0;" type="submit">Subscribe</button>
+                    <button id="btnsubscribe" class="btn-highlight" type="submit">Subscribe</button>
                 </form>
             </div>
         </article>
