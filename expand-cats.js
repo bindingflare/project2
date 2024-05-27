@@ -1,3 +1,5 @@
+var extraImgCount = 0;
+
 // Creates 3 cat images in a row and expands catalogue
 function addMoreCats(event) {
     console.log("adding more cats!");
@@ -30,6 +32,7 @@ function addMoreCats(event) {
         }, 400);
 
         new_height = griditem.clientHeight;
+        extraImgCount++;
     }
 
     grid.style.maxHeight = new_height + height + "px";
@@ -37,6 +40,12 @@ function addMoreCats(event) {
     window.setTimeout(function () {
         grid.style.maxHeight = "";
     }, 400);
+
+    if(extraImgCount >= 12) {
+        btnexpand.innerText = "Lets go HODU!";
+        btnexpand.style.backgroundColor = "#263140";
+        btnexpand.removeEventListener("click", addMoreCats); // TODO make another webpage for more HODU content
+    }
     
     event.preventDefault();
 }
