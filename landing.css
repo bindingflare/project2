@@ -71,10 +71,6 @@
     min-height: 500px;
 }
 
-#footerhodu {
-    padding-bottom: 32px;
-}
-
 .img-hodu {
     height: 40px;
     width: auto;
@@ -453,8 +449,8 @@ body {
         right: 0;
     }
 
-    #footerhodu {
-        padding-bottom: 0;
+    #footerflex {
+        min-height: 230px;
     }
 
     .menu-horz-flex {
