@@ -423,7 +423,7 @@ body {
     font-style: normal;
 }
 
-@media screen and (max-width: 920px)
+@media screen and (max-width: 800px)
 {
     #article-main {
         text-align: center;
