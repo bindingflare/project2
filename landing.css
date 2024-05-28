@@ -433,6 +433,7 @@ body {
     #menu-framer {
         position: absolute;
         right: 50px;
+        top: 20px;
     }
 
     #mainmenu {
@@ -466,7 +467,6 @@ body {
 
     .menu-horz-flex {
         justify-content: flex-start;
-        margin: 40px 0;
     }
 
     .div-grid {
