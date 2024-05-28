@@ -1,6 +1,6 @@
 var extraImgCount = 0;
 
-// Creates 3 cat images in a row and expands catalogue
+// creates images in a row and expands catalogue
 function addMoreCats(event) {
     console.log("adding more cats!");
     const grid = document.getElementById("expand-cat-grid");
@@ -23,7 +23,7 @@ function addMoreCats(event) {
         img.style.transition = ".4s ease";
         img.style.opacity = "0";
         
-        // Add to grid
+        // add to grid
         griditem.appendChild(img);
         grid.appendChild(griditem);
 
@@ -41,6 +41,7 @@ function addMoreCats(event) {
         grid.style.maxHeight = "";
     }, 400);
 
+    // if reach expand limit set by extraImgCount, convert expand button to something else
     if(extraImgCount >= 9) {
         btnexpand.innerText = "Lets go HODU!";
         btnexpand.style.backgroundColor = "#263140";
@@ -50,6 +51,6 @@ function addMoreCats(event) {
     event.preventDefault();
 }
 
-// Add event listener to show more button
+// add event listener to show more button
 const btnexpand = document.getElementById("expand-cats");
 btnexpand.addEventListener("click", addMoreCats);

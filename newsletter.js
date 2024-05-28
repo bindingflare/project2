@@ -1,6 +1,6 @@
-// Use Jquery JS framework for newsletter feature
+// use Jquery JS framework for newsletter feature
 
-// Creates popup for form submit
+// creates popup for form submit
 function createSubmitPopout(event) {
     console.log("creating popup!");
 
@@ -15,11 +15,11 @@ function createSubmitPopout(event) {
     event.preventDefault();
 }
 
-// Add event listener to form submit
+// add event listener to form submit
 const form = document.getElementById("subscribe");
 form.addEventListener("submit", createSubmitPopout);
 
-// Hide popup when close is pressed
+// hide popup when close is pressed
 function closePopup(event) {
     console.log("closing popup!");
 
@@ -29,7 +29,7 @@ function closePopup(event) {
     popup.css("transform","scale(0)");
 
     window.setTimeout(function(){
-        cover.css("display","none");
+        cover.css("display","none"); // remove cover only after animations complete
     },700);
 }
 
