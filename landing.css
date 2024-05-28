@@ -389,6 +389,7 @@ body {
     
     #img-sub-bg {
         background-size: 400px auto;
+        height: 400px;
     }
 
     #article-main {
@@ -423,7 +424,7 @@ body {
     font-style: normal;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 900px)
 {
     #article-main {
         text-align: center;

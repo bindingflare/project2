@@ -1,4 +1,4 @@
-const switchWidth = 800; // window width to switch to mobile view
+const switchWidth = 900; // window width to switch to mobile view
 var menuToggled = false;
 var slideMenuToggled = false;
 if(document.documentElement.scrollWidth < switchWidth) {
