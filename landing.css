@@ -69,6 +69,7 @@
     background-position: 30% 35%;
     background-color: white;
     width: 100%;
+    min-height: 500px;
 }
 
 #footerhodu {
