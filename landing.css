@@ -71,6 +71,10 @@
     min-height: 500px;
 }
 
+#footerflex {
+    min-height: 170px;
+}
+
 .img-hodu {
     height: 40px;
     width: auto;
