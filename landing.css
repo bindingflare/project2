@@ -283,8 +283,8 @@
     justify-content: center;
     background: white;
     border-radius: 1000px;
-    padding: 10px 10px;
-    margin: 16px 0;
+    padding: 10px;
+    margin: auto;
     flex: 0 1 auto;
 }
 
@@ -292,6 +292,7 @@
     border-width: 0;
     flex: 1 1 auto;
     font-size: 18px;
+    height: 50px;
 }
 
 .form-subscribe > input:focus {
@@ -398,7 +399,7 @@ body {
 
     #btnsubscribe {
         position: absolute;
-        top: 70px;
+        top: 85px;
         right: 0;
     }
 
@@ -407,8 +408,7 @@ body {
     }
 
     .form-subscribe {
-        padding: 16px 10px;
-        margin: 16px 0 100px 0;
+        margin: auto  0 70px 0;
     }
     
     .div-flex, .article-popout {
@@ -448,13 +448,7 @@ body {
         background-size: cover;
         background-position-x: right;
     }
-
-    #btnsubscribe {
-        position: absolute;
-        top: 70px;
-        right: 0;
-    }
-
+    
     #footerflex {
         min-height: 230px;
     }
