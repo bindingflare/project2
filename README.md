@@ -26,7 +26,7 @@ Webpage for sharing cat information.
   - Show more button: Done
   - Scroll top button: Done
   - Mobile menus: Done 
-### Secondary pages: TBD [#f03 c15](https://placehold.co/15x15/f03c15/f03c15.png)
+### Secondary pages: TBD ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
   - Header menu links: TBD
   - Download button TBD
   - Newsletter function TBD
