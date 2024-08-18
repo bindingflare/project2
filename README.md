@@ -1,6 +1,8 @@
 # Project 2
 Webpage for sharing cat information.
 
+![image](https://github.com/user-attachments/assets/1157a7ed-1e09-4750-afc5-e5226296c91d)
+
 ## Learning Objectives
 - Create a modern, sleek CSS styled webpage.
 - Add JS functionality to webpage
