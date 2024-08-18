@@ -1,4 +1,4 @@
-# Project 2
+# project2: HTML CSS JS
 Webpage for sharing cat information.
 
 ![image](https://github.com/user-attachments/assets/1157a7ed-1e09-4750-afc5-e5226296c91d)
